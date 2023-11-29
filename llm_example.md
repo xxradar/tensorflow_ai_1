@@ -1,22 +1,23 @@
-This script does the following:
+## This script does the following:
 
-    Imports necessary modules: TensorFlow and some specific layers and utilities for processing text.
+- **Imports necessary modules**: TensorFlow and some specific layers and utilities for processing text.
 
-    Prepares the data: It uses a simple string text as its dataset. In a real-world scenario, you would use a much larger and more complex dataset.
+- **Prepares the data**: It uses a simple string `text` as its dataset. In a real-world scenario, you would use a much larger and more complex dataset.
 
-    Tokenizes the text: This converts the text into sequences of integers, where each integer represents a specific word.
+- **Tokenizes the text**: This converts the text into sequences of integers, where each integer represents a specific word.
 
-    Creates n-gram sequences: This is important for training a language model, as it needs to learn the probability of a word given the previous words.
+- **Creates n-gram sequences**: This is important for training a language model, as it needs to learn the probability of a word given the previous words.
 
-    Pads the sequences: This ensures that all sequences are of the same length.
+- **Pads the sequences**: This ensures that all sequences are of the same length.
 
-    Splits the data into predictors and labels: The model will learn to predict the next word in a sequence.
+- **Splits the data into predictors and labels**: The model will learn to predict the next word in a sequence.
 
-    Builds a Sequential model: The model uses Embedding, GRU (a type of RNN), and Dense layers.
+- **Builds a Sequential model**: The model uses Embedding, GRU (a type of RNN), and Dense layers.
 
-    Compiles the model: It uses categorical crossentropy as the loss function, suitable for multi-class classification tasks.
+- **Compiles the model**: It uses categorical crossentropy as the loss function, suitable for multi-class classification tasks.
 
-    Trains the model: The model is trained for 100 epochs. You might need to adjust the number of epochs based on your specific dataset.
+- **Trains the model**: The model is trained for 100 epochs. You might need to adjust the number of epochs based on your specific dataset.
+
 ```
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
