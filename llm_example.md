@@ -62,6 +62,10 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 # Train the model
 model.fit(predictors, label, epochs=100, verbose=1)
 ```
+## This script does the following:
+The `generate_text` function is updated to work with the latest TensorFlow API.<br>
+It generates the predictions for the next word.<br>
+The output is a list of probabilities for each word in the vocabulary.
 ```
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
