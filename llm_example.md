@@ -63,7 +63,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 model.fit(predictors, label, epochs=100, verbose=1)
 ```
 ## This script does the following:
-The `generate_text` function is updated to work with the latest TensorFlow API.<br>
+The `generate_text` function is updated to work with the latest TensorFlow API and based on the previous example.<br>
 It generates the predictions for the next word.<br>
 The output is a list of probabilities for each word in the vocabulary.
 ```
